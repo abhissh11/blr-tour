@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const attractions = [
   {
@@ -49,6 +50,15 @@ const attractions = [
 ];
 
 export default function TopAttractions() {
+  const router = useRouter();
+
+  const handleCardClick = (slug: string) => {
+    // If mobile screen, navigate on card tap
+    if (window.innerWidth < 768) {
+      router.push(`/places/${slug}`);
+    }
+  };
+
   return (
     <section className="py-20">
       <h2 className="text-4xl font-bold text-center mb-12">
@@ -63,6 +73,7 @@ export default function TopAttractions() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.15, duration: 0.6 }}
             viewport={{ once: true }}
+            onClick={() => handleCardClick(item.slug)}
             className="group relative rounded-xl overflow-hidden shadow-lg cursor-pointer"
           >
             {/* Image */}
@@ -87,12 +98,12 @@ export default function TopAttractions() {
                 </p>
               </div>
 
-              {/* Hover Button */}
+              {/* Desktop Hover Button */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileHover={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                className="absolute inset-0 flex items-center justify-center z-20"
+                className="hidden md:flex absolute inset-0 items-center justify-center z-20"
               >
                 <a
                   href={`/places/${item.slug}`}

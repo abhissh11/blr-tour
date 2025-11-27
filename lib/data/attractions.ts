@@ -10,8 +10,8 @@ export const attractions = [
     location: "Mavalli, Bengaluru",
     gallery: [
       "/images/attractions/lalbagh.jpg",
-      "/images/attractions/lalbagh-2.jpg",
-      "/images/attractions/lalbagh-3.jpg",
+      "/images/attractions/lalbagh2.jpg",
+      "/images/attractions/lalbagh3.jpg",
     ],
     howToReach: [
       "Nearest Metro: Lalbagh Metro Station (Green Line)",
@@ -34,7 +34,7 @@ export const attractions = [
     gallery: [
       "/images/attractions/cubbon-park.jpg",
       "/images/attractions/cubbon-park-2.jpg",
-      "/images/attractions/cubbon-park-3.jpg",
+      "/images/attractions/cubbon-park.jpg",
     ],
     howToReach: [
       "Nearest Metro: Cubbon Park Metro Station (Purple Line)",
@@ -57,7 +57,7 @@ export const attractions = [
     gallery: [
       "/images/attractions/palace.jpeg",
       "/images/attractions/palace-2.jpg",
-      "/images/attractions/palace-3.jpg",
+      "/images/attractions/palace.jpeg",
     ],
     howToReach: [
       "Nearest Metro: Cubbon Park / Vidhana Soudha Metro Station",
@@ -80,7 +80,7 @@ export const attractions = [
     gallery: [
       "/images/attractions/nandi-hills.jpg",
       "/images/attractions/nandi-2.jpg",
-      "/images/attractions/nandi-3.jpg",
+      "/images/attractions/nandi-hills.jpg",
     ],
     howToReach: [
       "Nearest Metro: None (Taxi recommended)",
@@ -103,7 +103,7 @@ export const attractions = [
     gallery: [
       "/images/attractions/bannerghata.jpeg",
       "/images/attractions/bannerghatta-2.jpg",
-      "/images/attractions/bannerghatta-3.jpg",
+      "/images/attractions/bannerghata.jpeg",
     ],
     howToReach: [
       "Nearest Metro: Jayadeva Hospital Metro Station",
@@ -126,7 +126,7 @@ export const attractions = [
     gallery: [
       "/images/attractions/vidhana.jpg",
       "/images/attractions/vidhana-2.jpg",
-      "/images/attractions/vidhana-3.jpg",
+      "/images/attractions/vidhana.jpg",
     ],
     howToReach: [
       "Nearest Metro: Vidhana Soudha Metro Station (Purple Line)",
